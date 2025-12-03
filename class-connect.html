@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class Connect</title>
+
+<div id="loginScreen">
+  <h2>Login</h2>
+  <input id="loginName" placeholder="Enter Your Name" /><br>
+  <input id="loginID" placeholder="Enter Student ID" /><br>
+  <button onclick="loginUser()">Login</button>
+</div>
+
+<div id="mainUI" style="display:none;">
+  <h1>Class Connect</h1>
+  <p>Welcome, <span id="studentDisplay"></span>!</p>
+  <button onclick="logoutUser()">Logout</button>
+  <hr>
+
+  <div id="home" class="section">
+    <h2>Home</h2>
+    <p>Simple student collaboration platform.</p>
+  </div>
+
+  <div id="announcements" class="section" style="display:none;">
+    <h2>Announcements</h2>
+    <ul id="announcementList"></ul>
+    <input id="announcementInput" placeholder="Add announcement..." />
+    <button onclick="addAnnouncement()">Post</button>
+  </div>
+
+  <div id="chat" class="section" style="display:none;">
+    <h2>Class Chat</h2>
+    <div id="chatBox" style="border:1px solid #000; height:200px; overflow:auto;"></div>
+    <input id="chatInput" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+
+<style>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class Connect</title>
+
+<div id="loginScreen">
+  <h2>Login</h2>
+  <input id="loginName" placeholder="Enter Your Name" /><br>
+  <input id="loginID" placeholder="Enter Student ID" /><br>
+  <button onclick="loginUser()">Login</button>
+</div>
+
+
+<div id="mainUI" style="display:none;">
+  <h1>Class Connect</h1>
+  <p>Welcome, <span id="studentDisplay"></span>!</p>
+  <button onclick="logoutUser()">Logout</button>
+  <hr>
+
+  /
+  .creator-card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #8ec5fc, #e0c3fc);
+    min-height: 100vh;
+  }
+
+
+  #loginScreen, #mainUI {
+    max-width: 420px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  input {
+    width: 90%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+  }
+
+  button {
+    padding: 10px 18px;
+    margin-top: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background: #4a6cf7;
+    color: white;
+    font-weight: bold;
+  }
+
+   button:hover {
+    background: #3a59d6;
+  }
+
+  a {
+    margin: 0 10px;
+    cursor: pointer;
+    color: #4a6cf7;
+    font-weight: bold;
+  }
+
+  .section {
+    margin-top: 20px;
+  }
+ 
+  .section {
+    margin-top: 20px;
+  }
+
+  #announcementList li,
+  #chatBox p {
+    background: #f7f7f7;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 6px;
+    text-align: left;
+    border: 1px solid #e1e1e1;
+  }
+
+    #chatBox {
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  <a onclick="showSection('home')">Home</a> |
+  <a onclick="showSection('announcements')">Announcements</a> |
+  <a onclick="showSection('chat')">Chat</a> |
+  <a onclick="showSection('about')">About Us</a>
+
+
+<style>
